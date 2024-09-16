@@ -7,6 +7,7 @@ const { title } = Astro.props;
 import '@fontsource/fredoka-one';
 import '@fontsource/lato';
 import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
 import Companies from '../components/Companies.astro';
 ---
 
@@ -21,8 +22,9 @@ import Companies from '../components/Companies.astro';
     <title>{title}</title>
   </head>
   <body>
-    <Hero />
+    <Services />
     <Companies />
+    <Hero />
     <slot />
   </body>
 </html>
